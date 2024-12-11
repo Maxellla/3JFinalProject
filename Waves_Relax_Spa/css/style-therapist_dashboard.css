@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Philosopher&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --font-01: 'Poppins', sans-serif;
+    --font-02: 'Philosopher', sans-serif;
+
+    /* Color */
+    --global-color-0: #4E91C2;
+    --global-color-1: #639FD1;
+    --global-color-2: #1B2B48;
+    --global-color-3: #2C3D5A;
+    --global-color-4: #E6F2FA;
+    --global-color-5: #FFFFFF;
+    --global-color-6: #1A3A67;
+    --global-color-7: #BFD1FF;
+}
+
+body {
+    background-color: var(--global-color-4);
+    font-family: var(--font-01);
+    color: var(--global-color-2);
+}
+
+header {
+    background-color: var(--global-color-2);
+    color: var(--global-color-5);
+    padding: 30px 60px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 32px; /* Increased font size */
+    text-decoration: none;
+    color: var(--global-color-5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px; /* Increased margin */
+}
+
+nav ul li a {
+    color: var(--global-color-5);
+    text-decoration: none;
+    font-weight: 600; /* Increased font weight */
+}
+
+main {
+    max-width: 900px; /* Increased max width */
+    margin: 60px auto; /* Increased margin */
+    padding: 50px; /* Increased padding */
+    background: var(--global-color-5);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Increased shadow */
+}
+
+.availability-section h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin */
+    font-size: 36px; /* Increased font size */
+    color: var(--global-color-2);
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px; /* Increased margin */
+    font-weight: 600;
+    font-size: 18px; /* Increased font size */
+}
+
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 20px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin */
+    border: 1px solid var(--global-color-3);
+    border-radius: 8px; /* Increased border radius */
+    font-size: 18px; /* Increased font size */
+}
+
+button {
+    background-color: var(--global-color-0);
+    color: var(--global-color-5);
+    padding: 20px; /* Increased padding */
+    border: none;
+    border-radius: 8px; /* Increased border radius */
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px; /* Increased font size */
+    transition: background-color 0.3s;
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+button:last-child {
+    margin-bottom: 0; /* Remove margin for the last button */
+}
+
+button:hover {
+    background-color: var(--global-color-1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+table th, table td {
+    padding: 15px; /* Increased padding */
+    text-align: left;
+    border-bottom: 1px solid var(--global-color-3);
+}
+
+table th {
+    background-color: var(--global-color-1);
+    color: var(--global-color-5);
+}
+
+table tr:hover {
+    background-color: var(--global-color-7); /* Highlight on hover */
+}
+
+a {
+    color: var(--global-color-0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
